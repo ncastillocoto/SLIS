@@ -48,6 +48,7 @@
                     <rect y="9" width="30" height="2" fill="#fff"/>
                 </svg>
 
+                <!--Logo del Centro Educativo en el Centro del encabezado-->
                 <div class="logo-circle">
                     <img src="imagenes/logo.svg" alt="Logo Saint Lawrence School">
                     <div style="display: flex; gap: 10px; margin-left: 0px;">
@@ -65,14 +66,15 @@
                     <rect y="31.05" width="57" height="3.45"/>
                     </g>
                     <rect width="22.8" height="15.2" fill="#3C3B6E"/>
-                    <!-- Estrellas omitidas por simplicidad -->
                     </svg>
             </div>
             
-            <!-- Navegación -->
+            <!-- Menú hamburgesa para Celulares -->
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
+            
+            <!-- Barra de Navegación -->
             <nav>
                 <ul id="nav-menu">
                     <li><a href="index.html" class="active">Inicio</a></li>
@@ -90,7 +92,7 @@
     
     <!-- Contenido principal -->
     <main class="main-content">
-        <!-- Sección Hero -->
+        <!-- Banner de Bienvenida -->
         <section class="hero-section">
             <div class="hero-content">
                 <h1>Educación bilingüe de excelencia</h1>
@@ -99,7 +101,7 @@
             </div>
         </section>
         
-        <!-- Sección de Bienvenida -->
+        <!-- Sección Informativa -->
         <section class="section section-light">
             <div class="container">
                 <div class="welcome-section">
@@ -161,6 +163,7 @@
     <footer>
         <div class="container">
             <div class="footer-container">
+                <!-- Columna 1 -->
                 <div class="footer-column">
                     <div class="footer-logo">Saint Lawrence School</div>
                     <p class="footer-description">Centro educativo bilingüe comprometido con la formación integral de estudiantes con valores y educación de calidad desde 2009.</p>
@@ -170,6 +173,8 @@
                         <a href="https://www.youtube.com/@saintlawrenceschool5188" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+                
+                <!-- Columna 2-->
                 <div class="footer-column">
                     <h3 class="footer-title">Enlaces rápidos</h3>
                     <ul class="footer-links">
@@ -179,6 +184,8 @@
                         <li><a href="admision.html">Admisión</a></li>
                     </ul>
                 </div>
+
+                <!-- Columna 3 -->
                 <div class="footer-column">
                     <h3 class="footer-title">Contacto</h3>
                     <div class="footer-contact-item">
@@ -215,6 +222,8 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Pie de Página Final-->
             <div class="footer-bottom">
                 &copy; 2025 Saint Lawrence School. Todos los derechos reservados.
             </div>
@@ -229,6 +238,8 @@
     <!-- Scripts -->
     <script src="script.js"></script>
 
+
+    <!-- Script para el menú hamburguesa -->
     <script>
     document.getElementById('menu-toggle').addEventListener('click', function () {
         document.getElementById('nav-menu').classList.toggle('show');

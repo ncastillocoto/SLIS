@@ -118,6 +118,8 @@ nav {
     width: 100%;
     background-color: var(--blanco);
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
 }
 
 nav ul {
@@ -142,11 +144,13 @@ nav ul li a {
 nav ul li a:hover, nav ul li a.active {
     background-color: var(--azul-oscuro);
     color: var(--blanco);
+    border-radius: 10px;
 }
 
 nav ul li a:hover, nav ul li a.entrar {
     background-color: var(--rojo);
     color: var(--blanco);
+    border-radius: 10px;
 }
 
 /* Main Content */
@@ -1168,4 +1172,62 @@ flex: 1 1 50%;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
+}
+
+/* Botón hamburguesa oculto por defecto */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    color: var(--azul-oscuro);
+    cursor: pointer;
+}
+
+/* Menú responsive */
+@media screen and (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+
+    /* Estilo base: menú oculto */
+    #nav-menu {
+        display: none;
+    }
+    
+    /* Menú hamburguesa activo en toda la pantalla */
+    #nav-menu.show {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: #020062; /* tu color de fondo preferido */
+        z-index: 1000;
+        gap: 20px;
+    }
+    
+    #nav-menu.show li a {
+        color: white;
+        font-size: 1.5rem;
+        text-decoration: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -117,9 +117,7 @@ header {
 nav {
     width: 100%;
     background-color: var(--blanco);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    
+    border-top: 1px solid rgba(0, 0, 0, 0.1);    
 }
 
 nav ul {
@@ -155,7 +153,7 @@ nav ul li a:hover, nav ul li a.entrar {
 
 /* Main Content */
 .main-content {
-    margin-top: 240px;
+    margin-top: 0px;
     width: 100%;
 }
 
@@ -818,9 +816,6 @@ footer {
         left: calc(50% - 150px);
     }
     
-    .main-content {
-        margin-top: 200px;
-    }
     
     .hero-section {
         height: 400px;
@@ -832,15 +827,8 @@ footer {
     
     .hero-content p {
         font-size: 16px;
-    }
-    
-    nav ul {
-        flex-direction: column;
-    }
-    
-    nav ul li a {
-        padding: 10px;
-    }
+    }  
+
     
     .welcome-section, .contact-form-container {
         flex-direction: column;
@@ -875,10 +863,6 @@ footer {
         width: 50px;
         height: 30px;
         left: calc(50% - 120px);
-    }
-    
-    .main-content {
-        margin-top: 180px;
     }
     
     .hero-section {
